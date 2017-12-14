@@ -1,0 +1,52 @@
+.\" Manpage for boggle.py.
+.\" Contact theutus@mindless.com
+.TH DEVMAP 1 "30 March 2016" "1.0" "boggle.py python3 manual page"
+.SH NAME
+boggle.py
+.SH DESCRIPTION
+Boggle game was written for, and is to be used for learning purposes only!
+Hasbro Gaming, Boggle, and all related terms are trademarks of Hasbro.
+
+boggle.py is a program that emulates the Hasbro game of Boggle.  In the game of Boggle, sixteen dice showing letters
+are rolled and placed into a 4x4 grid.  Players then find and type in as many 3 or more character words as they can.
+
+Player select an easy game that plays with standard black on green dice where the computer will always chose
+the word that has the least points or the Hard game that uses Crazy Color themed letters and the computer will
+select the word with the higher point value as its guess.
+
+Player can select the time variable of seconds between computer guesses on a slide bar when they select the
+Simple Green or Crazy Colors dice themes.
+
+The object of this game is to score more points than the computer before the timer runs out.
+You’ve got 180 seconds to find and enter as many words as you can identify on the cube faces.
+
+Use as many of the letters as you can, the longer the word, the higher your score.
+The computer will find a word every 7 seconds.
+
+letter distribution Hasbro in standard 16 dice Plain old Boggle, 1976-1986
+http://www.bananagrammer.com/2013/10/the-boggle-cube-redesign-and-its-effect.html
+
+This Boggle game was written my MSG Mike Simpson, and is to be used for student learning purposes only
+Hasbro Gaming, Boggle, and all related terms are trademarks of Hasbro.
+.SH REQUIREMENTS
+1. The program to invoke should be ./boggle.py Make sure the executable bit is set in git, and that the interpreter line
+   is correct for the VM.
+2. Any version of Python 3 is acceptable; however, the program should not crash when invoked with the wrong version.
+   Instead, the program should be cognizant of the minimum version it requires,
+   and terminate with a message to the user if that is the case.
+3. Your project must run on the class Virtual Machine.  If you are working primarily on another machine,
+   especially one that is not Linux (OS X or Windows), make sure you test your ability to run well before the due date!
+4. The letter distribution should be the same as the game published by Hasbro.  Note that there are multiple versions;
+   any one is acceptable, but make sure your decision and reason is documented.
+5. Every seven seconds, the game should print a word that it finds.  This word should not be one the user has already
+   typed in.  Once the word is printed, the player may no longer use that word to score with.  That word is now part of
+   the computers score.
+6. The UNIX dictionary is an acceptable list of English words.  It can be found at /usr/share/dict.
+
+.SH EXAMPLE
+.nf
+./boggle.py or python3 boggle.py
+.SH BUGS
+
+.SH AUTHOR
+MSG Michael A Simpson
